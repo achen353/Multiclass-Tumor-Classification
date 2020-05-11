@@ -1,2 +1,4 @@
-# multiclass-tumor-classification
-Multiclass tumor classification on processed tabular data using one-vs-one logisitc regression classifiers
+# Multiclass Tumor Classification Using One-vs-one Classifiers
+This project aims to classify 5 different classes of tumors based on cleaned tabular data with 800+ features. Given the few samples for each class, I trained a logistic regression classifier for each pair of classes (e.g. 1 classifier to classify if a given data point is more likely to be Class 1 or Class 2) and adopted Learning Valued Preference for Classification (LVPC), a voting strategy that considers the score matrix as a fuzzy preference relation, to aggregate the result.
+
+All the codes are written in Python using Pandas, Numpy, Matplotlib and Scikit-learn libraries.
